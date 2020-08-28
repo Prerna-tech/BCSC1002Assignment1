@@ -5,10 +5,21 @@
  *  File Name : Book.java
  * */
 package definitions;
-import java.util.Objects;
 
 public class Book {
     private String bookName;
     private String nameOfBookAuthor;
     private String ISBNNumber;
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public String getNameOfBookAuthor() {
+        return nameOfBookAuthor;
+    }
+
+    public String getISBNNumber() {
+        return ISBNNumber;
+    }
 }
