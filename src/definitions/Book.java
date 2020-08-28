@@ -11,6 +11,12 @@ public class Book {
     private String nameOfBookAuthor;
     private String ISBNNumber;
 
+    public Book() {
+        this.bookName = "";
+        this.nameOfBookAuthor = "";
+        this.ISBNNumber = "";
+    }
+
     public String getBookName() {
         return bookName;
     }
@@ -31,7 +37,5 @@ public class Book {
         return ISBNNumber;
     }
 
-    public void setISBNNumber(String ISBNNumber) {
-        this.ISBNNumber = ISBNNumber;
-    }
+    public void setISBNNumber(String ISBNNumber) { this.ISBNNumber = ISBNNumber; }
 }
