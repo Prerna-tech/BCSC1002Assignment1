@@ -7,13 +7,41 @@
 package definitions;
 
 public class Student {
+    public Book[] nameOfBooksIssue;
     private String studentName;
     private String firstName;
     private String middleName;
     private String lastName;
     private long universityRollNumber;
-    private int noOfBookIssue;
-    public Book[] nameOfBooksIssue;
+    private int noOfBooksIssueIssue;
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
+    public int getNoOfBooksIssueIssue() {
+        return noOfBooksIssueIssue;
+    }
+
+    public Book[] getNameOfBooksIssue() {
+        return nameOfBooksIssue;
+    }
 
 }
 
