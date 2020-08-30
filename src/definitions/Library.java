@@ -5,6 +5,9 @@
  *  File Name : Library.java
  * */
 package definitions;
+import  java.util.Arrays;
 
 public class Library {
+    private Book[] store;
+
 }
