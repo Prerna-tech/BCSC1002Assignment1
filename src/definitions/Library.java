@@ -10,4 +10,13 @@ import  java.util.Arrays;
 
 public class Library {
     private Book[] currentlyAvailable;
+
+    public Library() {
+        this.currentlyAvailable = new Book[10];
+        for (int i = 0; i < currentlyAvailable.length; i++) {
+            currentlyAvailable[i] = new Book("Book" + (i + 1));
+        }
+    }
+
+
 }
