@@ -7,66 +7,82 @@
 package definitions;
 
 public class Student {
-    public Book[] nameOfBooksIssue;
+
+    private Book[] nameOfBooksIssue;
     private String studentName;
     private String firstName;
     private String middleName;
     private String lastName;
     private long universityRollNumber;
-    private int noOfBooksIssueIssue;
+    private int noOfBooksIssue;
+
+
+    public Student(String studentName, String firstName, String middleName, String lastName, long universityRollNumber, int noOfBooksIssue) {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.universityRollNumber = universityRollNumber;
+        this.noOfBooksIssue = noOfBooksIssue;
+        this.nameOfBooksIssue = new Book[noOfBooksIssue];
+        for (int i = 0; i < nameOfBooksIssue.length; i++) {
+            nameOfBooksIssue[i] = new Book("book" + (i + 1));
+        }
+    }
 
     public String getStudentName() {
         return studentName;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getMiddleName() {
-        return middleName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public long getUniversityRollNumber() {
-        return universityRollNumber;
-    }
-
-    public int getNoOfBooksIssue() {
-        return noOfBooksIssue;
-    }
-
-    public Book[] getNameOfBooksIssue() {
-        return nameOfBooksIssue;
     }
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
     }
 
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
     }
 
     public void setUniversityRollNumber(long universityRollNumber) {
         this.universityRollNumber = universityRollNumber;
     }
 
+    public int getNoOfBooksIssue() {
+        return noOfBooksIssue;
+    }
+
     public void setNoOfBooksIssue(int noOfBooksIssue) {
         this.noOfBooksIssue = noOfBooksIssue;
     }
 
-    public void setNameOfBooksIssue(Book[] nameOfBooksIssue) { this.nameOfBooksIssue = nameOfBooksIssue; }
+    public Book[] getNameOfBooksIssue() {
+        return nameOfBooksIssue;
+    }
+
+    public void setNameOfBooksIssue(Book[] nameOfBooksIssue) {
+        this.nameOfBooksIssue = nameOfBooksIssue;
+    }
 
 }
