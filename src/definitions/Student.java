@@ -35,13 +35,38 @@ public class Student {
         return universityRollNumber;
     }
 
-    public int getNoOfBooksIssueIssue() {
-        return noOfBooksIssueIssue;
+    public int getNoOfBooksIssue() {
+        return noOfBooksIssue;
     }
 
     public Book[] getNameOfBooksIssue() {
         return nameOfBooksIssue;
     }
 
-}
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
+    }
+
+    public void setNoOfBooksIssue(int noOfBooksIssue) {
+        this.noOfBooksIssue = noOfBooksIssue;
+    }
+
+    public void setNameOfBooksIssue(Book[] nameOfBooksIssue) { this.nameOfBooksIssue = nameOfBooksIssue; }
+
+}
