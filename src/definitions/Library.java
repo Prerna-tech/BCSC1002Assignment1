@@ -17,6 +17,9 @@ public class Library {
             currentlyAvailable[i] = new Book("Book" + (i + 1));
         }
     }
+    public Book[] getCurrentlyAvailable() { return currentlyAvailable; }
+
+    public void setCurrentlyAvailable(Book[] currentlyAvailable) { this.currentlyAvailable = currentlyAvailable; }
 
 
 }
